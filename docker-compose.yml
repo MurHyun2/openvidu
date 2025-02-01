@@ -10,7 +10,7 @@ services:
       - DOMAIN_OR_PUBLIC_IP=d204test.p-e.kr
       - HTTPS_PORT=443
       - CERTIFICATE_TYPE=letsencrypt
-      - LETSENCRYPT_EMAIL=your-email@example.com
+      - LETSENCRYPT_EMAIL=your-eddy152264@gmail.com
     volumes:
       - ./certificates:/etc/letsencrypt
       - ./data:/openvidu/recordings
