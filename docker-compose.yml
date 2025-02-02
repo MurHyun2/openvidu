@@ -23,7 +23,7 @@ services:
       - 8080:80
     volumes:
       - /home/ubuntu/openvidu/nginx/nginx.conf:/etc/nginx/nginx.conf
-      - /home/ubuntu/openvidu/frontend/public:/usr/share/nginx/html
+      - /home/ubuntu/openvidu/frontend/build:/usr/share/nginx/html
     container_name: nginx
     networks:
       - openvidu-net
@@ -34,7 +34,7 @@ services:
       dockerfile: docker/Dockerfile
     container_name: frontend
     volumes:
-      - /home/ubuntu/openvidu/frontend/public:/opt/openvidu-basic-node/public
+      - /home/ubuntu/openvidu/frontend/build:/opt/openvidu-basic-node/public
     environment:
       - OPENVIDU_URL=https://d204test.p-e.kr
       - OPENVIDU_SECRET=MY_SECRET
