@@ -23,7 +23,7 @@ services:
       dockerfile: docker/Dockerfile
     container_name: frontend
     ports:
-      - "5000:5000"
+      - "3000:3000"
     environment:
       - OPENVIDU_URL=https://d204test.p-e.kr
       - OPENVIDU_SECRET=MY_SECRET
@@ -38,7 +38,7 @@ services:
       dockerfile: docker/Dockerfile
     container_name: backend
     ports:
-      - "8080:8080"
+      - "5000:5000"
     environment:
       - OPENVIDU_URL=https://d204test.p-e.kr
       - OPENVIDU_SECRET=MY_SECRET

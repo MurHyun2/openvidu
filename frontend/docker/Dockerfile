@@ -6,8 +6,6 @@ COPY . ./openvidu-react
 
 WORKDIR /openvidu-react
 
-RUN mkdir -p ./openvidu-basic-node/public
-
 # Install openvidu-react dependencies and build it
 RUN npm install && \
 	npm run build && \
